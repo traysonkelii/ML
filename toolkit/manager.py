@@ -198,7 +198,7 @@ class MLSystemManager:
         parser.add_argument('-L', required=True, choices=['baseline', 'perceptron', 'neuralnet', 'decisiontree', 'knn'], help='Learning Algorithm')
         parser.add_argument('-A', '--arff', metavar='filename', required=True, help='ARFF file')
         parser.add_argument('-E', metavar=('METHOD', 'args'), required=True, nargs='+', help="Evaluation method (training | static <test_ARFF_file> | random <%%_for_training> | cross <num_folds>)")
-
+       
         return parser
 
 
