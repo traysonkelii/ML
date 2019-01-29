@@ -12,6 +12,7 @@ class PerceptronLearner(SupervisedLearner):
 
     labels = []
     weights = []
+    choices = []
 
     def __init__(self):
         pass
@@ -43,18 +44,7 @@ class PerceptronLearner(SupervisedLearner):
         np.random.shuffle(n_data)
         return n_data
 
-    def nominal(self, features, labels):
-
-    def continuous(self, features, labels):
-
-    def train(self, features, labels):
-
-        mylist = np.array(labels.data)
-        choices = set(mylist.flat)
-        print(choices)
-        # print(labels.print())
-        # print(labels.rows)
-        n_data = self.clean_data(features.data, labels.data)
+    def cycle(self, n_data):
         n_weights = np.zeros((n_data.shape[1]-1,1))
         learning_rate = .1
         count = 0
@@ -81,14 +71,18 @@ class PerceptronLearner(SupervisedLearner):
             else:
                 old_acc = new_acc
                 count = 0
-
             epoch += 1 
-        # print('Epoch: ',epoch)
+
+        print('Epoch: ',epoch)
+        return n_weights
+
+    def train(self, features, labels):
+        n_data = self.clean_data(features.data, labels.data)
+        n_weights = self.cycle(n_data)
         self.weights = n_weights
 
-        
-
     def predict(self, features, labels):
+
         del labels[:]
         f = np.array(features)
         f = np.append(f,[1])
@@ -98,7 +92,4 @@ class PerceptronLearner(SupervisedLearner):
             labels += [1]
         else:
             labels += [0]
-        
-
-
 
