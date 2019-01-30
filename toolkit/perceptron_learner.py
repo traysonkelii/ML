@@ -65,7 +65,8 @@ class PerceptronLearner(SupervisedLearner):
                     wrong += 1
             
             new_acc = ((len(n_features) - wrong) / len(n_features)) * 100
-            # print(new_acc)
+
+            print('Miscalculation: ', (1 - (new_acc/100)) )
             if (abs(old_acc - new_acc)) < 1:
                 count += 1
             else:
@@ -74,12 +75,14 @@ class PerceptronLearner(SupervisedLearner):
             epoch += 1 
 
         print('Epoch: ',epoch)
+        print('Learning Rate: ', learning_rate)
         return n_weights
 
     def train(self, features, labels):
         n_data = self.clean_data(features.data, labels.data)
         n_weights = self.cycle(n_data)
         self.weights = n_weights
+        print(n_weights)
 
     def predict(self, features, labels):
 

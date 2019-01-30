@@ -17,7 +17,6 @@ class IrisLearner(PerceptronLearner):
 
     def __init__(self):
       self.one_two_w = []
-      self.zero_two_w = []
       self.zero_one_w = []
       pass
 
@@ -30,11 +29,9 @@ class IrisLearner(PerceptronLearner):
     def iris(self, n_data):
 
       one_two_data = n_data[np.where(n_data[:,5] != 0)] # 1 vs 2
-      zero_two_data = n_data[np.where(n_data[:,5] != 1)] # 0 vs 2
       zero_one_data = n_data[np.where(n_data[:,5] != 2)] # 0 vs 1
 
       self.one_two_w = self.normalize(self.cycle(one_two_data)) # finds 1 or 2
-      self.zero_two_w = self.normalize(self.cycle(zero_two_data)) # finds 0 or 2
       self.zero_one_w = self.normalize(self.cycle(zero_one_data)) # finds 0 or 1
 
     def train(self, features, labels):
@@ -56,13 +53,7 @@ class IrisLearner(PerceptronLearner):
         f = np.array(features)
         f = np.append(f,[1])
         one_two = np.around(np.dot(f,self.one_two_w), decimals=2)
-        zero_two = np.around(np.dot(f,self.zero_two_w), decimals=2)
         zero_one = np.around(np.dot(f,self.zero_one_w), decimals=2)
-
-        print('\nnew row')
-        print('one_two', one_two)
-        print('zero_two', zero_two)
-        print('zero_one\n', zero_one)
 
         if zero_one < 0:
           labels += [0]

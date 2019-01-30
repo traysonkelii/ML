@@ -1,0 +1,240 @@
+
+Dataset name: datasets/seperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+Epoch:  13
+Learning Rate:  0.8
+Time to train (in seconds): 0.005965709686279297
+Training set accuracy: 0.625
+
+Dataset name: datasets/seperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+Epoch:  13
+Learning Rate:  0.8
+Time to train (in seconds): 0.0008070468902587891
+Training set accuracy: 0.875
+
+Dataset name: datasets/seperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+Epoch:  11
+Learning Rate:  0.8
+Time to train (in seconds): 0.0007481575012207031
+Training set accuracy: 0.625
+
+Dataset name: datasets/seperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+Epoch:  17
+Learning Rate:  0.8
+Time to train (in seconds): 0.0017790794372558594
+Training set accuracy: 0.75
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+8 ,
+0.8 ,
+Time to train (in seconds): 0.0071718692779541016
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+12 ,
+0.8 ,
+Time to train (in seconds): 0.0007779598236083984
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+9 ,
+0.8 ,
+Time to train (in seconds): 0.0006678104400634766
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+10 ,
+0.8 ,
+Time to train (in seconds): 0.0006492137908935547
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+11 ,
+0.8 ,
+Time to train (in seconds): 0.001313924789428711
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+10 ,
+0.8 ,
+Time to train (in seconds): 0.001377105712890625
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+8 ,
+0.5 ,
+Time to train (in seconds): 0.00423884391784668
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+8 ,
+0.5 ,
+Time to train (in seconds): 0.0005860328674316406
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+10 ,
+0.5 ,
+Time to train (in seconds): 0.0006508827209472656
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+10 ,
+0.5 ,
+Time to train (in seconds): 0.0006616115570068359
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+9 ,
+0.5 ,
+Time to train (in seconds): 0.0006029605865478516
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+10 ,
+0.1 ,
+Time to train (in seconds): 0.0008978843688964844
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+9 ,
+0.1 ,
+Time to train (in seconds): 0.0006420612335205078
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+9 ,
+0.1 ,
+Time to train (in seconds): 0.0008370876312255859
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+11 ,
+0.1 ,
+Time to train (in seconds): 0.0007317066192626953
+Training set accuracy: 0.5
+
+Dataset name: datasets/nonseperable.arff
+Number of instances: 8
+Number of attributes: 3
+Learning algorithm: perceptron
+Evaluation method: training
+
+Calculating accuracy on training set...
+8 ,
+0.1 ,
+Time to train (in seconds): 0.0005850791931152344
+Training set accuracy: 0.5

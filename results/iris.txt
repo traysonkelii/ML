@@ -1,0 +1,219 @@
+
+Dataset name: datasets/voter.arff
+Number of instances: 461
+Number of attributes: 17
+Learning algorithm: perceptron
+Evaluation method: random
+
+Calculating accuracy on a random hold-out set...
+Percentage used for training: 0.7
+Percentage used for testing: 0.30000000000000004
+Miscalculation:  0.12422360248447206
+Miscalculation:  0.09006211180124224
+Miscalculation:  0.05590062111801242
+Miscalculation:  0.03105590062111796
+Miscalculation:  0.037267080745341574
+Miscalculation:  0.037267080745341574
+Miscalculation:  0.021739130434782705
+Miscalculation:  0.018633540372670843
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Epoch:  13
+Learning Rate:  0.1
+[[-0.17688889]
+ [-0.00927667]
+ [-0.28747667]
+ [ 1.06919   ]
+ [ 0.16972333]
+ [-0.15006556]
+ [ 0.01274444]
+ [ 0.11464444]
+ [-0.33857778]
+ [ 0.07030111]
+ [-0.41081   ]
+ [ 0.02750111]
+ [-0.03017667]
+ [ 0.24093444]
+ [-0.28069889]
+ [-0.00885444]
+ [-0.26885444]]
+Time to train (in seconds): 0.030037879943847656
+Training set accuracy: 0.953416149068323
+Test set accuracy: 0.9568345323741008
+
+Dataset name: datasets/voter.arff
+Number of instances: 461
+Number of attributes: 17
+Learning algorithm: perceptron
+Evaluation method: random
+
+Calculating accuracy on a random hold-out set...
+Percentage used for training: 0.7
+Percentage used for testing: 0.30000000000000004
+Miscalculation:  0.13354037267080743
+Miscalculation:  0.10869565217391308
+Miscalculation:  0.037267080745341574
+Miscalculation:  0.040372670807453326
+Miscalculation:  0.03416149068322982
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Epoch:  11
+Learning Rate:  0.1
+[[-0.05777778]
+ [-0.07955556]
+ [-0.31077778]
+ [ 1.14722222]
+ [ 0.04833333]
+ [-0.11055556]
+ [-0.03867778]
+ [ 0.16243333]
+ [-0.24867778]
+ [ 0.37821111]
+ [-0.53177778]
+ [ 0.33721111]
+ [ 0.05854444]
+ [-0.08145556]
+ [-0.2929    ]
+ [-0.16734444]
+ [-0.32034444]]
+Time to train (in seconds): 0.01801896095275879
+Training set accuracy: 0.9596273291925466
+Test set accuracy: 0.9568345323741008
+
+Dataset name: datasets/voter.arff
+Number of instances: 461
+Number of attributes: 17
+Learning algorithm: perceptron
+Evaluation method: random
+
+Calculating accuracy on a random hold-out set...
+Percentage used for training: 0.7
+Percentage used for testing: 0.30000000000000004
+Miscalculation:  0.12422360248447206
+Miscalculation:  0.07453416149068337
+Miscalculation:  0.037267080745341574
+Miscalculation:  0.04347826086956519
+Miscalculation:  0.02795031055900621
+Miscalculation:  0.024844720496894457
+Miscalculation:  0.018633540372670843
+Miscalculation:  0.01242236024844734
+Miscalculation:  0.01242236024844734
+Miscalculation:  0.01242236024844734
+Miscalculation:  0.01242236024844734
+Miscalculation:  0.01242236024844734
+Miscalculation:  0.01242236024844734
+Epoch:  13
+Learning Rate:  0.1
+[[-0.10078889]
+ [-0.15138667]
+ [-0.42757667]
+ [ 0.90920111]
+ [ 0.27581333]
+ [-0.06418667]
+ [ 0.07354444]
+ [ 0.14342333]
+ [-0.36879889]
+ [ 0.13840111]
+ [-0.46359889]
+ [ 0.21538   ]
+ [-0.03439778]
+ [ 0.05792444]
+ [-0.29878889]
+ [-0.05107556]
+ [-0.11207556]]
+Time to train (in seconds): 0.023097753524780273
+Training set accuracy: 0.9565217391304348
+Test set accuracy: 0.935251798561151
+
+Dataset name: datasets/voter.arff
+Number of instances: 461
+Number of attributes: 17
+Learning algorithm: perceptron
+Evaluation method: random
+
+Calculating accuracy on a random hold-out set...
+Percentage used for training: 0.7
+Percentage used for testing: 0.30000000000000004
+Miscalculation:  0.12111801242236031
+Miscalculation:  0.09627329192546585
+Miscalculation:  0.052795031055900665
+Miscalculation:  0.040372670807453326
+Miscalculation:  0.040372670807453326
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.009316770186335366
+Miscalculation:  0.006211180124223614
+Miscalculation:  0.006211180124223614
+Miscalculation:  0.006211180124223614
+Miscalculation:  0.006211180124223614
+Epoch:  11
+Learning Rate:  0.1
+[[-0.11779   ]
+ [-0.07878889]
+ [-0.29279889]
+ [ 1.14719   ]
+ [ 0.15741222]
+ [-0.21258778]
+ [ 0.27333222]
+ [ 0.16422111]
+ [-0.3698    ]
+ [ 0.27011   ]
+ [-0.5109    ]
+ [ 0.217     ]
+ [ 0.09630111]
+ [ 0.10952222]
+ [-0.28179889]
+ [-0.07947778]
+ [-0.23047778]]
+Time to train (in seconds): 0.01756882667541504
+Training set accuracy: 0.953416149068323
+Test set accuracy: 0.9496402877697842
+
+Dataset name: datasets/voter.arff
+Number of instances: 461
+Number of attributes: 17
+Learning algorithm: perceptron
+Evaluation method: random
+
+Calculating accuracy on a random hold-out set...
+Percentage used for training: 0.7
+Percentage used for testing: 0.30000000000000004
+Miscalculation:  0.12422360248447206
+Miscalculation:  0.10869565217391308
+Miscalculation:  0.05590062111801242
+Miscalculation:  0.03105590062111796
+Miscalculation:  0.03105590062111796
+Miscalculation:  0.018633540372670843
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Miscalculation:  0.01552795031055898
+Epoch:  11
+Learning Rate:  0.1
+[[-0.08567778]
+ [-0.18156667]
+ [-0.56725556]
+ [ 0.93942222]
+ [ 0.12864444]
+ [-0.15135556]
+ [ 0.01555556]
+ [ 0.10464444]
+ [-0.26868889]
+ [ 0.18242222]
+ [-0.47977778]
+ [ 0.11611111]
+ [ 0.17742222]
+ [ 0.20085556]
+ [-0.35857778]
+ [ 0.10285556]
+ [-0.24914444]]
+Time to train (in seconds): 0.02439713478088379
+Training set accuracy: 0.9472049689440993
+Test set accuracy: 0.9568345323741008
