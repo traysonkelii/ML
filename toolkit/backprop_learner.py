@@ -8,7 +8,7 @@ import numpy as np
 class BackpropLearner(SupervisedLearner):
 
     learning_rate = .4
-    node_rate = 1 # input nodes * node rate = # of hidden nodes
+    node_rate = 2 # input nodes * node rate = # of hidden nodes
     momentum = .9
     hidden_weights = []
     input_weights = []
@@ -204,6 +204,8 @@ class BackpropLearner(SupervisedLearner):
             net = np.dot(hidden_output, self.bssf_hidden[:,i])
             out = 1/(1+(e**-net))
             output[i] = out
+        
+        print(output)
        
         answer = np.argmax(output)
         labels.append(answer) 
