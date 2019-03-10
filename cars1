@@ -1,9 +1,0 @@
-
-Dataset name: datasets/cars.arff
-Number of instances: 1728
-Number of attributes: 7
-Learning algorithm: decisiontree
-Evaluation method: cross
-
-Calculating accuracy using cross-validation...
-Number of folds: 1
