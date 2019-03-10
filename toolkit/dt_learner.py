@@ -3,9 +3,10 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 from .supervised_learner import SupervisedLearner
 from .matrix import Matrix
 from math import log
+from math import ceil
 import numpy as np
 from scipy import stats
-
+import copy 
 class DecisionTreeLearner(SupervisedLearner):
 
     def __init__(self):
@@ -13,6 +14,8 @@ class DecisionTreeLearner(SupervisedLearner):
       self.node_num = 1
       pass
 
+    depth = 0
+    bssf = 0
     class Node:
       def __init__(self):
         self.children = []
@@ -20,6 +23,7 @@ class DecisionTreeLearner(SupervisedLearner):
         self.value = -1
         self.stop = -1
         self.data = -1
+        self.pruned = 0
 
     def concat_data(self, features, labels):
       n_features = np.array(features)
@@ -36,18 +40,6 @@ class DecisionTreeLearner(SupervisedLearner):
       for i in data:
         total += -i*log(i,2)
       return total
-
-    # def get_initial_info(self, n_data):
-    #   new_labels = n_data[:,-1]
-    #   classes_num = np.unique(new_labels)
-    #   total = len(new_labels)
-    #   split = []
-    #   for i in classes_num:
-    #     rows = np.where(new_labels == i)
-    #     val = len(rows[0])/total
-    #     split.append(val)
-    #   data = self.get_info(split)
-    #   return data
     
     def split(self, total):
       attributes = total[:,:-1]
@@ -96,6 +88,7 @@ class DecisionTreeLearner(SupervisedLearner):
       return all_info, all_children, interest
     
     def build_tree(self, node):
+      self.depth += 1
       info, children, interest = self.split(node.data)
       selected = np.argmin(info)
       children = children[selected]
@@ -128,24 +121,50 @@ class DecisionTreeLearner(SupervisedLearner):
           self.build_tree(new_node)
       pass
 
+    def prune(self, data, tree):
+      if(tree.stop == 1):
+        pass
+      elif(tree.pruned == 0):
+        tree.pruned = 1
+        my_copy = copy.deepcopy(tree)
+        self.guess(data, my_copy)
+        for children in tree.children:
+          self.prune(data, children)
+        pass
+      else:
+        pass
+      
+    def guess(self, data, tree):
+      features = data[:,:-1]
+      total = data.shape[0]
+      right = 0
+      for i in range(features.shape[0]):
+        answer = self.find(tree, features[i,:])
+        if answer == int(data[i][-1]):
+          right += 1
+      accuracy = right/total
+      if accuracy > self.bssf:
+        self.path = tree
+        self.bssf = accuracy
 
     def train(self, features, labels):
       n_data = self.concat_data(features.data, labels.data)
-      self.path.data = n_data
+      n_data = self.shuffle(n_data)
+      vs_num = int(n_data.shape[0] * .2)
+      vs = n_data[0:vs_num,:]
+      ts = n_data[vs_num:,:]
+  
+      self.path.data = ts
       self.build_tree(self.path)
+      self.depth = ceil(log(self.depth,2))
       print(self.node_num)
+      print(self.depth)
+      # self.prune(vs, self.path)
+      
       return
     
 
-    def predict(self, features, labels):
-      del labels[:]
-      """
-      :type features: [float]
-      :type labels: [float]
-      """
-      features = np.array(features)
-
-      def find(node, features):
+    def find(self,node, features):
         if node.stop == 1:
           return node.value
         elif len(features) == 1:
@@ -164,7 +183,14 @@ class DecisionTreeLearner(SupervisedLearner):
           if child_index >= len(node.children):
             child_index = len(node.children)-1
           node = node.children[child_index]
-          return find(node, features)
+          return self.find(node, features)
 
-      answer = find(self.path, features)    
+    def predict(self, features, labels):
+      del labels[:]
+      """
+      :type features: [float]
+      :type labels: [float]
+      """
+      features = np.array(features)
+      answer = self.find(self.path, features)    
       labels.append(answer) 

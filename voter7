@@ -1,0 +1,25 @@
+
+Dataset name: datasets/voter.arff
+Number of instances: 435
+Number of attributes: 17
+Learning algorithm: decisiontree
+Evaluation method: cross
+
+Calculating accuracy using cross-validation...
+Number of folds: 7
+94
+Rep=0, Fold=0, Accuracy=0.967741935484
+172
+Rep=0, Fold=1, Accuracy=1.0
+273
+Rep=0, Fold=2, Accuracy=1.0
+356
+Rep=0, Fold=3, Accuracy=1.0
+435
+Rep=0, Fold=4, Accuracy=1.0
+533
+Rep=0, Fold=5, Accuracy=1.0
+610
+Rep=0, Fold=6, Accuracy=1.0
+Average time to train (in seconds): 0.095443384988
+Mean accuracy=0.995391705069

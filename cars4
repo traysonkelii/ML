@@ -1,0 +1,19 @@
+
+Dataset name: datasets/cars.arff
+Number of instances: 1728
+Number of attributes: 7
+Learning algorithm: decisiontree
+Evaluation method: cross
+
+Calculating accuracy using cross-validation...
+Number of folds: 4
+560
+Rep=0, Fold=0, Accuracy=0.909722222222
+1132
+Rep=0, Fold=1, Accuracy=1.0
+1743
+Rep=0, Fold=2, Accuracy=1.0
+2288
+Rep=0, Fold=3, Accuracy=1.0
+Average time to train (in seconds): 0.12313657999
+Mean accuracy=0.977430555556
