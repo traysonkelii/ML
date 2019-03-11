@@ -7,6 +7,8 @@ from math import ceil
 import numpy as np
 from scipy import stats
 import copy 
+
+
 class DecisionTreeLearner(SupervisedLearner):
 
     def __init__(self):
@@ -65,6 +67,8 @@ class DecisionTreeLearner(SupervisedLearner):
           vals = np.unique(new_rows[:,-1])
           log_vals = []
           if np.isinf(j):
+              labels = stats.mode(total[:,-1], axis=None)[0][0]
+              most = stats.mode(attributes[:,i], axis=None)[0][0]
               child[2] = child_vals
           else:
             child[int(j)] = child_vals
@@ -153,8 +157,9 @@ class DecisionTreeLearner(SupervisedLearner):
       vs_num = int(n_data.shape[0] * .2)
       vs = n_data[0:vs_num,:]
       ts = n_data[vs_num:,:]
-  
-      self.path.data = ts
+      test = copy.deepcopy(n_data)
+
+      self.path.data = n_data
       self.build_tree(self.path)
       self.depth = ceil(log(self.depth,2))
       print(self.node_num)
