@@ -1,0 +1,13 @@
+
+@RELATION seperable
+
+@ATTRIBUTE a1 real
+@ATTRIBUTE a2 real
+@ATTRIBUTE class {0,1}
+
+@DATA
+0, 0, 1
+0, 1, 0
+
+
+

@@ -6,6 +6,7 @@ from .perceptron_learner import PerceptronLearner
 from .iris_learner import IrisLearner
 from .backprop_learner import BackpropLearner
 from .dt_learner import DecisionTreeLearner
+from .knn_learner import KnnLearner
 from .matrix import Matrix
 import random
 import argparse
@@ -32,7 +33,7 @@ class MLSystemManager:
             "backprop": BackpropLearner(),
             #"neuralnet": NeuralNetLearner(),
             "decisiontree": DecisionTreeLearner(),
-            #"knn": InstanceBasedLearner()
+            "knn": KnnLearner()
         }
         if model in modelmap:
             return modelmap[model]
