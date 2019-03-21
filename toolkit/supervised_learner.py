@@ -51,10 +51,11 @@ class SupervisedLearner:
             # label is continuous
             pred = []
             sse = 0.0
+
             for i in range(features.rows):
                 feat = features.row(i)
                 targ = labels.row(i)
-                pred[0] = 0.0       # make sure the prediction is not biased by a previous prediction
+                pred.append(0.0)       # make sure the prediction is not biased by a previous prediction
                 self.predict(feat, pred)
                 delta = targ[0] - pred[0]
                 sse += delta**2

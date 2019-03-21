@@ -238,7 +238,7 @@ class Matrix:
 
     def normalize(self):
         """Normalize each column of continuous values"""
-        for i in range(self.cols):
+        for i in range(self.cols-1):
             if self.value_count(i) == 0:     # is continuous
                 min_val = self.column_min(i)
                 max_val = self.column_max(i)
