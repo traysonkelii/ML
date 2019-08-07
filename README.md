@@ -1,9 +1,7 @@
 # ML toolkit
 
-## Basic commands
+## Basic command
 ```
-mkdir datasets
-wget http://axon.cs.byu.edu/~martinez/classes/478/stuff/iris.arff -P datasets/
 python -m toolkit.manager -L baseline -A datasets/iris.arff -E training
 ```
 
